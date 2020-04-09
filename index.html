@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+<main class="page">
+	<header class="header">
+		<svg class="logo">
+			<a href="#"><use xlink:href="#logo"></use> </a>
+		</svg>
+
+		<nav class="nav">
+			<ul class="nav__listing">
+				<li>
+					<a href="page1.html"><span>Summary table</span> <svg><use xlink:href="#display"></use></svg></a>
+				</li>
+				<li>
+					<a href="page2.html"><span>Window</span><svg> <use xlink:href="#display2"></use></svg></a>
+				</li>
+				<li>
+					<a href="page3.html"> <span>Graph</span><svg> <use xlink:href="#graph"></use></svg></a>
+				</li>
+				<li>
+					<a href="index.html"><span>Fintch Score</span><svg> <use xlink:href="#calendar"></use></svg></a>
+				</li>
+				<li>
+					<a href="#5"><span>Calendar</span><svg><use xlink:href="#calendar2"></use></svg></a>
+				</li>
+				<li>
+					<a href="#6"><span>Trend</span><svg><use xlink:href="#trend"></use></svg></a>
+					</li>
+				<li>
+					<a href="#7"><span>Trend2</span><svg><use xlink:href="#trend2"></use></svg></a>
+				</li>
+				<li>
+					<a href="#8"><span>Download</span><svg><use xlink:href="#download"></use></svg></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="content">
+		<!-- USER -->
+		<header class="fintch-score" >
+			<h1 class="header-title">Fintch Score</h1>
+			<div class="fintch-score__menu">
+
+				<div class="fintch-score__menu-item">
+					
+					<input type="image" src="img/search.svg">
+					
+					<input class="fintch-score__menu-search" type="search" placeholder="search on this page">
+				</div>
+					
+				<div class="fintch-score__menu-item">
+					<input type="image" src="img/bell.svg">
+					<div class="fintch-score__menu-notice score__listing">
+						<ul>
+							<li><a href="#"><img src="img/message.png" alt="message">New message</a></li>
+							<li><a href="#"><img src="img/update.png" alt="update">Update</a></li>
+							<li><a href="#"><img src="img/friend.png" alt="friend">New friend</a></li>
+							<li><a href="#"><img src="img/news.png" alt="news">News</a></li>
+						</ul>
+						
+					</div>
+				</div>
+					
+				<div class="fintch-score__menu-item">
+					<div class="fintch-score__user-block">
+						<input type="image" src="img/user.png" id="fintch-score__menu-user">
+						<label for="fintch-score__menu-user">
+							<span>Darrell Rodgers ываыв ываы ва выаыва</span>
+						</label>
+					</div>
+					<div class="fintch-score__user-listing score__listing">
+						<ul>
+							<li><a href="#"><img src="img/profile.png" alt="Profile">Profile</a></li>
+							<li><a href="#"><img src="img/settings.png" alt="Settings">Settings</a></li>
+							<li><a href="#"><img src="img/faq.png" alt="F.A.Q">F.A.Q</a></li>
+							<li><a href="#"><img src="img/logout.png" alt="Logout">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+		<!-- RATED SCORE -->
+		<section class="rated-score">
+			<section class="rated-score__compare-menu">
+				<div class="rated-score__filter">
+					
+					<!-- НЕ работает в IE -->
+					<!-- <details>
+						<summary>
+							<svg class="rated-score__menu-item"><use xlink:href="#menu"></use></svg>
+							<p>Best Rated FinTech </p>
+						</summary>
+						<div class="rated-score__listing">
+							<ul>
+								<li><a href="#"><img src="img/profile.png" alt="Profile">Profile</a></li>
+								<li><a href="#"><img src="img/settings.png" alt="Settings">Settings</a></li>
+								<li><a href="#"><img src="img/faq.png" alt="F.A.Q">F.A.Q</a></li>
+								<li><a href="#"><img src="img/logout.png" alt="Logout">Logout</a></li>
+							</ul>
+						</div>
+					</details> -->
+
+					<input class="rated-score__filter-btn" 	 type="checkbox" id="rated-score__menu">
+					<label for="rated-score__menu"> 
+						<svg class="rated-score__menu-item"><use xlink:href="#menu"></use></svg>
+						<p>Best Rated FinTech </p>
+					</label>	
+
+					<div class="rated-score__listing score__listing">
+						<ul>
+							<li><a href="#"><img src="img/profile.png" alt="Profile">Best Rated FinTech</a></li>
+							<li><a href="#"><img src="img/settings.png" alt="Settings">Lowest Rated FinTech</a></li>
+							<li><a href="#"><img src="img/faq.png" alt="F.A.Q">Total Rated FinTech</a></li>
+							<li><a href="#"><img src="img/logout.png" alt="Logout">Lorem Rated FinTech</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rated-score__value">
+					<ul>
+						<li><strong>Best score</strong><span>4.98<svg class="rated-score__value-arrowUp"><use xlink:href="#arrow"></use></svg></span></li>
+						<li><strong>Lowest score</strong><span>2.05<svg class="rated-score__value-arrowDown"><use xlink:href="#arrow"></use></svg></span></li>
+						<li><strong>Total score</strong><span>3.87<svg class="rated-score__value-total"><use xlink:href="#menu"></use></svg></span></li>
+					</ul>
+				</div>
+				<button class="rated-score__btn-compare card-btn" type="button">+ Compare Fintech Item</button>
+			</section>
+
+			<!-- CARD -->
+
+			<section class="rated-score__rating-list" ondragover='onDragOver(event);' ondrop='onDrop(event);'>
+				<section class="rated-score__card">
+					<section class="rated-score__card-item" 
+					id='draggable1' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+					
+
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Liqid</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+								<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+							
+						</div>
+						<div class="rated-score__card-score">
+							<strong>4.98</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<!------->
+							<div>
+								<button class="rated-score__card-like">
+									<svg><use xlink:href="#heart"></use></svg>
+								</button>
+								<span class="likes-number">1</span>
+							</div>
+								
+							<!------->
+							<!-- <label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label> -->
+
+							<input type="checkbox" id="card-selected-1">
+							<label for="card-selected-1" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					id='draggable2' 
+					draggable='true'
+					ondragstart='onDragStart(event);'
+					>
+					
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Whitebox</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>4.75</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-2">
+							<label for="card-selected-2" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					id='draggable3' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Quirion</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>4.66</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-3">
+							<label for="card-selected-3" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					id='draggable4' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Fintego</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>4.05</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-4">
+							<label for="card-selected-4" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					id='draggable5' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Easufolio</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>3.91</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-5">
+							<label for="card-selected-5" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+
+					id='draggable6' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Vaamo</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>3.55</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-6">
+							<label for="card-selected-6" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					id='draggable7' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>Scalpable Cap.</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+									<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>3.1</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							<input type="checkbox" id="card-selected-7">
+							<label for="card-selected-7" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+					<section class="rated-score__card-item" 
+					
+					id='draggable8' 
+					draggable='true'
+			 		ondragstart='onDragStart(event);'
+			 		>
+						<div class="rated-score__card-title">
+							<div class="rated-score__card-name">
+								<strong>United Sig.</strong> 
+								<em>Online Banking</em>
+							</div>
+							<div class="rated-score__card-rating">
+								<span>5.0 <svg><use xlink:href="#star"></use></svg></span>
+							</div>
+						</div>
+						<div class="rated-score__card-score">
+							<strong>2.95</strong>
+							<p>Total Score</p>
+						</div>
+						<div class="rated-score__card-point">
+							<label class="rated-score__card-like">
+								<input type="checkbox">
+								<svg><use xlink:href="#heart"></use></svg>
+							</label>
+							
+							<input type="checkbox" id="card-selected-8">
+							<label for="card-selected-8" 	class="rated-score__card-selected">
+								<svg><use xlink:href="#tick"></use></svg>
+							</label>
+						</div>
+					</section>
+
+				</section>
+
+				<!-- RIGHT Table -->
+				<section class="rated-score__last">
+
+					<div class="rated-score__last-table-scroll">
+						<table class="rated-score__last-table">
+							<caption>Last added score</caption>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital ыва выа выа ыва asd sad asdas dываыва sdf</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital ыва выа выа ыва asd sad asdas dываыва sdf</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital ыва выа выа ыва asd sad asdas dываыва sdf</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>insurance</td>
+								<td>...</td>
+							</tr>
+							<tr>
+								<td><p>4.9</p></td>
+								<td>Scalable capital</td>
+								<td>ins</td>
+								<td>...</td>
+							</tr>
+
+						</table>
+					</div>
+					<input type="checkbox" id="rated-score__last-btn">
+					<label class="rated-score__last-btn card-btn" for="rated-score__last-btn">View All</label>
+				</section>
+			</section>
+
+			<!-- Bottom Table -->
+
+			<section class="rated-score__bottom-table">
+				<div class="rated-score__bottom-table-inner">
+					<table>
+						<tr>
+							<th>name</th>
+							<th>status</th>
+							<th>provider types</th>
+							<th>categories</th>
+							<th>sub categories</th>
+							<th>total score</th>
+							<th>organization</th>
+							<th>categories</th>
+							<th>sub categories</th>
+							<th>total score</th>
+							<th>organization</th>
+						</tr>
+						<tr>
+							<td><span>F</span><p>Frindsurance</p><svg><use xlink:href="#star"></use></svg></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+						<tr>
+							<td><span>C</span><p>Frindsurance</p><svg><use xlink:href="#star"></use></svg></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+						<tr>
+							<td><span>SB</span><p>Frindsurance</p></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+						<tr>
+							<td><span>C</span><p>Frindsurance</p><svg><use xlink:href="#star"></use></svg></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+						<tr>
+							<td><span>SB</span><p>Frindsurance</p></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+							<tr>
+							<td><span>C</span><p>Frindsurance</p><svg><use xlink:href="#star"></use></svg></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+						<tr>
+							<td><span>SB</span><p>Frindsurance</p></td>
+							<td><div><p>Published</p></div></td>
+							<td>InsurTech, Insurance</td>
+							<td>Insurance</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+							<td>Robo adviser</td>
+							<td>3.335</td>
+							<td>4.5</td>
+							<td>...</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+
+		<section class="actual-page">
+			<div class="actual-page__amount"><span>(1-10 of 1278)</span> <span>items per page 10</span></div>
+			<div class="actual-page__next-page">
+				<p>Page</p>  
+				<span>
+					<input type="number" min="1" max="47" value="1"> 
+					/ 47 
+				</span>
+			</div>
+		</section>
+	</section>
+</main>
+
+
+
+
+
+
+
+
+<svg class="inline-svg-icon" display="none">
+   			<symbol id="logo" viewBox="0 0 512 512">
+				<g>
+					<g>
+						<path d="M168.585,383.865c16.23,52.516,41.692,91.958,70.679,103.164V373.57C215.008,374.678,191.381,378.199,168.585,383.865z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M272.846,272.623v67.476c27.167,1.137,53.518,5.008,79.015,11.371c5.374-24.769,8.781-51.535,9.784-78.847H272.846z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M272.846,24.971v113.46c24.256-1.108,47.772-4.629,70.568-10.294C327.185,75.619,301.835,36.177,272.846,24.971z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M351.862,160.529c-25.498,6.364-51.849,10.235-79.015,11.371v67.141h88.8
+							C360.643,211.729,357.236,185.299,351.862,160.529z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M168.585,128.136c22.797,5.664,46.424,9.185,70.679,10.293V24.971C210.276,36.177,184.815,75.619,168.585,128.136z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M150.353,272.623c1.004,27.312,4.411,54.077,9.784,78.848c25.498-6.364,51.96-10.235,79.127-11.371v-67.477H150.353z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M160.137,160.529c-5.373,24.77-8.78,51.202-9.784,78.513h88.911V171.9C212.098,170.763,185.635,166.892,160.137,160.529z"
+							/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M272.847,373.569v113.46c28.987-11.206,54.338-50.648,70.568-103.165C320.618,378.198,297.102,374.677,272.847,373.569z"
+							/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M395.15,272.623c-1.025,30.937-4.862,60.838-11.069,88.425c29.524,10.12,57.471,23.62,83.4,40.066
+							c25.459-36.987,41.447-81.056,44.519-128.491H395.15z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M136.579,393.446c-25.12,8.79-48.988,20.239-71.255,34.064c37.113,41.221,87.373,70.332,144.099,80.78
+							C178.636,487.174,153.044,445.873,136.579,393.446z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M375.421,393.447c-16.465,52.427-42.059,93.728-72.845,114.844c56.727-10.449,106.987-39.56,144.099-80.78
+							C424.409,413.687,400.542,402.238,375.421,393.447z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M467.481,110.885c-25.928,16.446-53.876,29.946-83.4,40.066c6.207,27.587,10.042,57.154,11.069,88.09H512
+							C508.929,191.606,492.94,147.872,467.481,110.885z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M44.519,110.885C19.06,147.873,3.071,191.606,0,239.041h116.85c1.025-30.937,4.863-60.503,11.069-88.09
+							C98.395,140.831,70.447,127.331,44.519,110.885z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M116.85,272.624H0c3.071,47.435,19.06,91.504,44.519,128.491c25.928-16.446,53.876-29.946,83.4-40.066
+							C121.712,333.462,117.876,303.561,116.85,272.624z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M65.324,84.489c22.267,13.824,46.134,25.273,71.255,34.064c16.465-52.427,42.058-93.728,72.845-114.844
+							C152.697,14.158,102.437,43.268,65.324,84.489z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M302.577,3.708c30.786,21.116,56.38,62.418,72.845,114.844c25.121-8.789,48.988-20.238,71.255-34.064
+							C409.562,43.268,359.303,14.158,302.577,3.708z"/>
+					</g>
+				</g>
+   			</symbol>
+
+   			<symbol id="display" viewBox="0 0 512 512">
+				<g>
+				<g>
+						<path d="M125.97,87.981H30c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30h95.97c16.542,0,30-13.458,30-30v-95.97
+							C155.97,101.439,142.512,87.981,125.97,87.981z M125.97,213.951H30v-95.97h95.97l0.02,95.969
+							C125.99,213.95,125.983,213.951,125.97,213.951z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M482,87.981H208.015c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30H482c16.542,0,30-13.458,30-30v-95.97
+							C512,101.439,498.542,87.981,482,87.981z M482,213.951H208.015v-95.97H482l0.019,95.969
+							C482.019,213.95,482.013,213.951,482,213.951z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M303.985,268.049H30c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30h273.985c16.542,0,30-13.458,30-30v-95.97
+							C333.985,281.507,320.527,268.049,303.985,268.049z M303.985,394.019H30v-95.97h273.985l0.019,95.969
+							C304.004,394.018,303.998,394.019,303.985,394.019z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M482,268.049h-95.97c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30H482c16.542,0,30-13.458,30-30v-95.97
+							C512,281.507,498.542,268.049,482,268.049z M482,394.019h-95.97v-95.97H482l0.019,95.969
+							C482.019,394.018,482.013,394.019,482,394.019z"/>
+					</g>
+				</g>
+   			</symbol>
+   			<symbol id="display2" viewBox="0 0 512 512">
+				<g>
+				<g>
+						<path d="M125.97,87.981H30c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30h95.97c16.542,0,30-13.458,30-30v-95.97
+							C155.97,101.439,142.512,87.981,125.97,87.981z M125.97,213.951H30v-95.97h95.97l0.02,95.969
+							C125.99,213.95,125.983,213.951,125.97,213.951z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M482,87.981H208.015c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30H482c16.542,0,30-13.458,30-30v-95.97
+							C512,101.439,498.542,87.981,482,87.981z M482,213.951H208.015v-95.97H482l0.019,95.969
+							C482.019,213.95,482.013,213.951,482,213.951z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M303.985,268.049H30c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30h273.985c16.542,0,30-13.458,30-30v-95.97
+							C333.985,281.507,320.527,268.049,303.985,268.049z M303.985,394.019H30v-95.97h273.985l0.019,95.969
+							C304.004,394.018,303.998,394.019,303.985,394.019z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M482,268.049h-95.97c-16.542,0-30,13.458-30,30v95.97c0,16.542,13.458,30,30,30H482c16.542,0,30-13.458,30-30v-95.97
+							C512,281.507,498.542,268.049,482,268.049z M482,394.019h-95.97v-95.97H482l0.019,95.969
+							C482.019,394.018,482.013,394.019,482,394.019z"/>
+					</g>
+				</g>
+   			</symbol>
+   			<symbol id="graph" viewBox="0 0 512.001 512.001">
+				<g>
+					<g>
+						<path d="M506.35,80.699c-7.57-7.589-19.834-7.609-27.43-0.052L331.662,227.31l-42.557-42.557c-7.577-7.57-19.846-7.577-27.423,0
+							L89.076,357.36c-7.577,7.57-7.577,19.853,0,27.423c3.782,3.788,8.747,5.682,13.712,5.682c4.958,0,9.93-1.894,13.711-5.682
+							l158.895-158.888l42.531,42.524c7.57,7.57,19.808,7.577,27.397,0.032l160.97-160.323
+							C513.881,100.571,513.907,88.288,506.35,80.699z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M491.96,449.94H38.788V42.667c0-10.712-8.682-19.394-19.394-19.394S0,31.955,0,42.667v426.667
+							c0,10.712,8.682,19.394,19.394,19.394H491.96c10.712,0,19.394-8.682,19.394-19.394C511.354,458.622,502.672,449.94,491.96,449.94z
+							"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M492.606,74.344H347.152c-10.712,0-19.394,8.682-19.394,19.394s8.682,19.394,19.394,19.394h126.061v126.067
+							c0,10.705,8.682,19.394,19.394,19.394S512,249.904,512,239.192V93.738C512,83.026,503.318,74.344,492.606,74.344z"/>
+					</g>
+				</g>
+   			</symbol>
+   			<symbol id="calendar" viewBox="0 0 512 512">
+
+				<path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-352c0-32.363281 26.304688-58.664062 58.667969-58.664062h394.664062c32.363281 0 58.667969 26.300781 58.667969 58.664062v352c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-437.332031c-14.699219 0-26.667969 11.964843-26.667969 26.664062v352c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-352c0-14.699219-11.96875-26.664062-26.667969-26.664062zm0 0"/><path d="m496 202.667969h-480c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h480c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m122.667969 128c-8.832031 0-16-7.167969-16-16v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m389.332031 128c-8.832031 0-16-7.167969-16-16v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 8.832031-7.167969 16-16 16zm0 0"/>
+   			</symbol>
+   			<symbol id="calendar2" viewBox="0 0 512 512">
+
+				<path d="m453.332031 512h-394.664062c-32.363281 0-58.667969-26.304688-58.667969-58.667969v-352c0-32.363281 26.304688-58.664062 58.667969-58.664062h394.664062c32.363281 0 58.667969 26.300781 58.667969 58.664062v352c0 32.363281-26.304688 58.667969-58.667969 58.667969zm-394.664062-437.332031c-14.699219 0-26.667969 11.964843-26.667969 26.664062v352c0 14.699219 11.96875 26.667969 26.667969 26.667969h394.664062c14.699219 0 26.667969-11.96875 26.667969-26.667969v-352c0-14.699219-11.96875-26.664062-26.667969-26.664062zm0 0"/><path d="m496 202.667969h-480c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h480c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m122.667969 128c-8.832031 0-16-7.167969-16-16v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m389.332031 128c-8.832031 0-16-7.167969-16-16v-96c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v96c0 8.832031-7.167969 16-16 16zm0 0"/>
+   			</symbol>
+   			<symbol id="trend" viewBox="0 -42 512.00138 512">
+
+				<path d="m512 34.503906v-19.734375c0-8.15625-6.613281-14.769531-14.769531-14.769531h-44.304688c-5.835937 0-11.121093 3.433594-13.492187 8.761719-2.375 5.328125-1.390625 11.550781 2.511718 15.886719l13.71875 15.242187-177.265624 94.542969-71.03125-71.03125c-4.28125-4.28125-10.746094-5.515625-16.304688-3.113282l-182.152344 78.769532c-7.484375 3.238281-10.929687 11.929687-7.691406 19.417968 3.191406 7.386719 12.023438 10.890626 19.417969 7.695313l172.941406-74.789063 71.671875 71.675782c4.597656 4.597656 11.660156 5.648437 17.394531 2.585937l193.378907-103.132812 10.230468 11.367187c4.042969 4.496094 10.617188 6.078125 16.269532 3.910156 5.707031-2.191406 9.476562-7.671874 9.476562-13.789062v-29.394531c0-.035157 0-.070313 0-.101563zm0 0"/><path d="m126.035156 167.179688v261.125h66.953125v-289.917969c-.652343.179687-1.292969.398437-1.925781.671875zm0 0"/><path d="m319.015625 428.304688h66.953125v-272.472657l-66.953125 35.707031zm0 0"/><path d="m222.527344 157.328125v270.976563h66.953125v-221.011719l-11.082031 5.910156zm0 0"/><path d="m.00390625 231.382812v182.152344c0 8.15625 6.61328175 14.769532 14.76953175 14.769532h81.722656v-248.351563l-87.585938 37.875c-5.40625 2.335937-8.90624975 7.664063-8.90624975 13.554687zm0 0"/><path d="m504.832031 100.566406c-4.449219-2.667968-9.972656-2.808594-14.550781-.367187l-74.769531 39.878906v288.226563h81.71875c8.160156 0 14.769531-6.613282 14.769531-14.769532v-300.304687c0-5.1875-2.722656-9.996094-7.167969-12.664063zm0 0"/>
+   			</symbol>
+   			<symbol id="trend2" viewBox="0 -42 512.00138 512">
+
+				<path d="m512 34.503906v-19.734375c0-8.15625-6.613281-14.769531-14.769531-14.769531h-44.304688c-5.835937 0-11.121093 3.433594-13.492187 8.761719-2.375 5.328125-1.390625 11.550781 2.511718 15.886719l13.71875 15.242187-177.265624 94.542969-71.03125-71.03125c-4.28125-4.28125-10.746094-5.515625-16.304688-3.113282l-182.152344 78.769532c-7.484375 3.238281-10.929687 11.929687-7.691406 19.417968 3.191406 7.386719 12.023438 10.890626 19.417969 7.695313l172.941406-74.789063 71.671875 71.675782c4.597656 4.597656 11.660156 5.648437 17.394531 2.585937l193.378907-103.132812 10.230468 11.367187c4.042969 4.496094 10.617188 6.078125 16.269532 3.910156 5.707031-2.191406 9.476562-7.671874 9.476562-13.789062v-29.394531c0-.035157 0-.070313 0-.101563zm0 0"/><path d="m126.035156 167.179688v261.125h66.953125v-289.917969c-.652343.179687-1.292969.398437-1.925781.671875zm0 0"/><path d="m319.015625 428.304688h66.953125v-272.472657l-66.953125 35.707031zm0 0"/><path d="m222.527344 157.328125v270.976563h66.953125v-221.011719l-11.082031 5.910156zm0 0"/><path d="m.00390625 231.382812v182.152344c0 8.15625 6.61328175 14.769532 14.76953175 14.769532h81.722656v-248.351563l-87.585938 37.875c-5.40625 2.335937-8.90624975 7.664063-8.90624975 13.554687zm0 0"/><path d="m504.832031 100.566406c-4.449219-2.667968-9.972656-2.808594-14.550781-.367187l-74.769531 39.878906v288.226563h81.71875c8.160156 0 14.769531-6.613282 14.769531-14.769532v-300.304687c0-5.1875-2.722656-9.996094-7.167969-12.664063zm0 0"/>
+   			</symbol>
+   			<symbol id="download" viewBox="0 0 471.2 471.2">
+
+				<g>
+					<g>
+						<path d="M457.7,230.15c-7.5,0-13.5,6-13.5,13.5v122.8c0,33.4-27.2,60.5-60.5,60.5H87.5c-33.4,0-60.5-27.2-60.5-60.5v-124.8
+							c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v124.8c0,48.3,39.3,87.5,87.5,87.5h296.2c48.3,0,87.5-39.3,87.5-87.5v-122.8
+							C471.2,236.25,465.2,230.15,457.7,230.15z"/>
+						<path d="M226.1,346.75c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8c5.3-5.3,5.3-13.8,0-19.1c-5.3-5.3-13.8-5.3-19.1,0l-62.7,62.8
+							V30.75c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v273.9l-62.8-62.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1
+							L226.1,346.75z"/>
+					</g>
+				</g>
+   			</symbol>
+			
+			<symbol id="menu" viewBox="0 0 384 384">
+				<g>
+					<g>
+						<g>
+							<rect x="149.333" y="277.333" width="85.333" height="42.667"/>
+							<rect x="64" y="170.667" width="256" height="42.667"/>
+							<rect x="0" y="64" width="384" height="42.667"/>
+						</g>
+					</g>
+				</g>
+   			</symbol>
+			<symbol id="arrow" viewBox="0 0 64 64">
+				<path d="m53 8h-23.899c-1.104 0-2 .896-2 2s.896 2 2 2h21.071l-40.586 40.586c-.781.781-.781 2.047 0 2.828.39.391.902.586 1.414.586s1.024-.195 1.414-.586l40.586-40.586v21.071c0 1.104.896 2 2 2s2-.896 2-2v-23.899c0-2.206-1.794-4-4-4z"/>
+			</symbol>
+			<symbol id="heart" viewBox="0 -28 512.00002 512">
+				<path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/>
+			</symbol>
+			<symbol id="tick" viewBox="0 0 512 512">
+				<g>
+					<g>
+						<path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0
+							c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7
+							C514.5,101.703,514.499,85.494,504.502,75.496z"/>
+					</g>
+				</g>
+			</symbol>
+			<symbol id="star" viewBox="0 0 24 24">
+				<path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" />
+			</symbol>
+
+   			
+
+</svg> 
+	<script src="js/main.js"></script>
+</body>
+</html>
